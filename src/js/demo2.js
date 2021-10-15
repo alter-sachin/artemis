@@ -94,11 +94,11 @@ function dots() {
 let whale = null;
 const loader = new OBJLoader();
 loader.load(
-  "Turtle_Model.obj",
+  "https://theartemis.world/spherical.obj",
   (obj) => {
     whale = obj.children[0];
     whale.geometry.scale(3, 3, 3);
-    whale.geometry.translate(-1.5, -.3, 0);
+    whale.geometry.translate(0, 0, 0);
     whale.geometry.rotateY(0);
     dots();
   },
